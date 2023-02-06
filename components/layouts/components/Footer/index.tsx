@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </Container>
       </div>
-      <div className={'flex justify-center border-t border-gray-600 py-6 text-footer-link md:mt-0'}>
+      <div className='flex justify-center border-t border-gray-600 py-6 text-footer-link md:mt-0'>
         © {new Date().getFullYear()} RadSync Corporation. All rights reserved
       </div>
     </div>

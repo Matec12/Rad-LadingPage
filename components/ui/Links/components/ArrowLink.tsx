@@ -40,18 +40,18 @@ export default function ArrowLink<C extends React.ElementType>({
         <path
           d='M44.4299 5.92969L50.4999 11.9997L44.4299 18.0697'
           stroke='currentColor'
-          stroke-width='1.5'
-          stroke-miterlimit='10'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeMiterlimit='10'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M3.5 12H50.33'
           stroke='currentColor'
-          stroke-width='1.5'
-          stroke-miterlimit='10'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeMiterlimit='10'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </svg>
     </Component>

@@ -20,9 +20,8 @@ export default function Company() {
       <h5 className='mb-4 text-xl font-bold text-white'>Company</h5>
       <ul>
         {NAVLINKS?.map(link => (
-          <li className='mb-2 text-footer-link'>
+          <li key={link.name} className='mb-2 text-footer-link'>
             <UnstyledLink
-              key={link.name}
               href='/'
               className={clsxm(
                 'text-base',

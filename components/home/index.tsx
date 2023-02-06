@@ -10,7 +10,7 @@ import Testimonials from './components/Testimonials';
 
 interface HomepageProps {}
 
-const HomePage: React.FC<HomepageProps> = ({}) => {
+const HomePage: React.FC<HomepageProps> = () => {
   return (
     <Layout title='RADSNYC | Home'>
       <Banner />

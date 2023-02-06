@@ -64,7 +64,7 @@ function ClientsItem(client: { image: string }) {
 
   return (
     <div className={clsxm('stat-item w-20 flex-1')}>
-      <Image src={image} className='' />
+      <Image src={image} className='' alt='' />
     </div>
   );
 }
