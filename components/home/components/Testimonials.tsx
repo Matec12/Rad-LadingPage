@@ -93,7 +93,7 @@ export default function Testimonials() {
             <div className='carousel-basic'>
               <Slider {...settings}>
                 {TESTIMONIALS.map(item => (
-                  <div key={item.name} className='bg-white p-8 shadow-custom'>
+                  <div key={item.name} className='bg-white p-8 shadow-contact-card rounded-lg'>
                     <div className='user-profile flex items-center gap-4'>
                       <div className='overflow-hidden rounded-full'>
                         <Image src={item.image} className='rounded-full' />

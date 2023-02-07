@@ -4,10 +4,10 @@ import { openGraph } from 'utils/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Chaelhey',
-  siteName: 'Chaelhey',
-  description: 'Ecommerce site',
-  url: 'https://chealhey-website.vercel.app',
+  title: 'RADSYNC',
+  siteName: 'RADSYNC',
+  description: 'health site',
+  url: 'https://radsync-website.vercel.app',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
