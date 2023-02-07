@@ -8,7 +8,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 
 const AboutPage = () => {
   return (
-    <Layout title='Contact' navLinkClassName='text-white' iconClassName='text-white' isLogoWhite>
+    <Layout title='Contact'>
       <Banner />
       <WhoWeAre />
       <WhyChooseUs />

@@ -44,7 +44,7 @@ body {
 .swiper {
   @apply z-50 h-full w-full;
   .swiper-slide {
-    @apply flex items-center justify-center text-center text-center text-lg;
+    @apply flex text-lg;
   }
 
   .swiper-pagination-bullet {
@@ -100,7 +100,6 @@ label {
   @apply bg-cover bg-top bg-no-repeat;
   background-image: url('https://res.cloudinary.com/matec-technology-services/image/upload/v1675686601/radsync/accuray-VJ3o_O54Xp8-unsplash_az7svr.jpg');
 }
-
 
 .banner-overlay {
   @apply relative z-[1];
@@ -268,6 +267,27 @@ leading-6 transition-[border-color,_box-shadow] duration-150 ease-in-out;
     ~ .form-control.is-valid {
       .input-group-text & {
         @apply border-success;
+      }
+    }
+  }
+}
+
+.carousel-basic {
+  @apply relative z-50;
+}
+
+.dotActive {
+  @apply h-2 w-2 rounded-full transition-all duration-[360ms];
+}
+
+.carousel-dots {
+  @apply mt-4 flex list-none justify-center space-x-3;
+  & li {
+    @apply cursor-pointer opacity-50;
+    &.slick-active {
+      @apply z-20 opacity-100;
+      .dotActive {
+        @apply w-4 rounded-md;
       }
     }
   }

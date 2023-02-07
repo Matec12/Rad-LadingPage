@@ -28,17 +28,9 @@ const NAVLINKS: NavLink[] = [
 
 export interface IHeaderProps {
   headerClassName?: string;
-  navLinkClassName?: string;
-  iconClassName?: string;
-  isLogoWhite?: boolean;
 }
 
-export default function Header({
-  headerClassName,
-  navLinkClassName,
-  iconClassName,
-  isLogoWhite
-}: IHeaderProps) {
+export default function Header({ headerClassName }: IHeaderProps) {
   const [hide, setHide] = useState(true);
   let [overlayOpen, setOverlayOpen] = useState(false);
   const pathname: any = usePathname();
@@ -76,7 +68,6 @@ export default function Header({
           <div className='flex items-center justify-between'>
             <div className='z-50 flex flex-row items-center space-x-12'>
               <UnstyledLink href='/'>
-                {/* {isLogoWhite ? <LogoWhite width={120} height={60} /> : <Logo width={120} height={60} />} */}
                 <Logo width={120} height={60} />
               </UnstyledLink>
             </div>
@@ -103,7 +94,6 @@ export default function Header({
                                       'text-opacity-90': open,
                                       'text-primary': pathname.includes(href)
                                     }
-                                    // navLinkClassName
                                   )}
                                 >
                                   <span>{name}</span>
@@ -123,11 +113,7 @@ export default function Header({
                                     <div className='overflow-hidden rounded-lg shadow-2xl drop-shadow-xl'>
                                       <div className='relative grid gap-8 bg-white p-7'>
                                         {children.map(({ name, href }, idx) => (
-                                          <UnstyledLink
-                                            key={name}
-                                            href={href}
-                                            onClick={() => setOverlayOpen(false)}
-                                          >
+                                          <UnstyledLink key={name} href={href}>
                                             {name}
                                           </UnstyledLink>
                                         ))}
@@ -148,7 +134,6 @@ export default function Header({
                           className={clsxm(
                             'inline-block px-6 py-2 text-base font-medium capitalize text-secondary duration-500 hover:text-primary',
                             { 'text-primary': pathname === href }
-                            // navLinkClassName
                           )}
                         >
                           {name}
