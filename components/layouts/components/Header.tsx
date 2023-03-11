@@ -142,20 +142,20 @@ export default function Header({ headerClassName }: IHeaderProps) {
                     );
                   })}
                   <div className='flex flex-col gap-6 lg:hidden'>
-                    <ButtonLink flat href='' className='hover:bg:transparent'>
+                    <ButtonLink flat href='https://radsync-portal.netlify.app/auth/login' className='hover:bg:transparent'>
                       Login
                     </ButtonLink>
-                    <ButtonLink href=''>Sign up</ButtonLink>
+                    <ButtonLink href='https://radsync-portal.netlify.app/auth/register'>Sign up</ButtonLink>
                   </div>
                 </ul>
               </nav>
             </div>
 
             <div className='hidden gap-x-5 lg:flex'>
-              <ButtonLink flat href='' className='hover:bg-transparent'>
+              <ButtonLink flat href='https://radsync-portal.netlify.app/auth/login' isNewTab className='hover:bg-transparent'>
                 Login
               </ButtonLink>
-              <ButtonLink href=''>Sign up</ButtonLink>
+              <ButtonLink href='https://radsync-portal.netlify.app/auth/register' isNewTab>Sign up</ButtonLink>
             </div>
 
             <span
