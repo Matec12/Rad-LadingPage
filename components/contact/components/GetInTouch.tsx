@@ -40,7 +40,9 @@ const GetInTouch = () => {
                     />
                   </div>
                   <div>
-                    <H5 className='mb-2 font-semibold text-section-title'>Lagos Office</H5>
+                    <H5 className='mb-2 font-semibold text-section-title'>
+                      Lagos Office
+                    </H5>
                     <Paragraph className='text-section-subtitle hover:text-primary'>
                       34, Admiralty way, Lekki Phase 1, Lagos- Nigeria
                     </Paragraph>
@@ -57,7 +59,9 @@ const GetInTouch = () => {
                     />
                   </div>
                   <div>
-                    <H5 className='mb-2 font-semibold text-section-title'>Email Us Directly</H5>
+                    <H5 className='mb-2 font-semibold text-section-title'>
+                      Email Us Directly
+                    </H5>
                     <UnstyledLink href=''>
                       <Paragraph className='mb-1 text-section-subtitle hover:text-primary'>
                         info@radsync.com
@@ -81,7 +85,9 @@ const GetInTouch = () => {
                     />
                   </div>
                   <div>
-                    <H5 className='mb-2 font-semibold text-section-title'>Phone</H5>
+                    <H5 className='mb-2 font-semibold text-section-title'>
+                      Phone
+                    </H5>
                     <UnstyledLink href=''>
                       <Paragraph className='mb-1 text-section-subtitle hover:text-primary'>
                         09038484893
@@ -105,7 +111,9 @@ const GetInTouch = () => {
                     />
                   </div>
                   <div>
-                    <H5 className='mb-4 font-semibold text-section-title'>Socials</H5>
+                    <H5 className='mb-4 font-semibold text-section-title'>
+                      Socials
+                    </H5>
                     <div className='socials mt-2'>
                       <div className='flex items-center justify-center gap-3'>
                         <UnstyledLink

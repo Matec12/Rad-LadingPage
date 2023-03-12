@@ -3,13 +3,12 @@ import Container from '@/components/ui/Container';
 import Image from '@/components/ui/Image';
 import { H2, Paragraph, H5 } from '@/components/ui/Typography';
 
-
 export default function WhoWeAre() {
   return (
     <section className='who-we-are pt-16 xl:pt-24'>
       <Container>
         <div className='relative flex flex-wrap items-center'>
-          <div className='z-[1] grid gap-y-4 md:px-2 text-left sm:gap-y-4 md:w-1/2 md:flex-initial'>
+          <div className='z-[1] grid gap-y-4 text-left sm:gap-y-4 md:w-1/2 md:flex-initial md:px-2'>
             <H2 className='text-section-title'>
               <span className='relative'>
                 Who{' '}
@@ -22,17 +21,18 @@ export default function WhoWeAre() {
               We Are
             </H2>
             <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-              quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Dicta consequuntur, et, quis quaerat necessitatibus ut ipsum
-              provident Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              consequuntur, et, quis quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis quaerat
-              necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
             </Paragraph>
             <div className='mt-5'></div>
           </div>
-          <div className='relative z-[1] overflow-visible md:px-4 md:flex md:w-1/2 md:flex-initial'>
+          <div className='relative z-[1] overflow-visible md:flex md:w-1/2 md:flex-initial md:px-4'>
             <div className='thumbs'>
               <Image
                 src='https://res.cloudinary.com/matec-technology-services/image/upload/v1675602792/radsync/hero-1-dot_isfu2h.png'

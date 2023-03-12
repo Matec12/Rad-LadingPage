@@ -5,9 +5,16 @@ export type ParagraphProps = {
   children: React.ReactNode;
 } & React.ComponentProps<'p'>;
 
-const Paragraph: React.FC<ParagraphProps> = ({ children, className, ...rest }) => {
+const Paragraph: React.FC<ParagraphProps> = ({
+  children,
+  className,
+  ...rest
+}) => {
   return (
-    <p className={clsxm('text-base font-normal leading-6 text-body', className)} {...rest}>
+    <p
+      className={clsxm('text-base font-normal leading-6 text-body', className)}
+      {...rest}
+    >
       {children}
     </p>
   );

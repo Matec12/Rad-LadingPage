@@ -16,7 +16,12 @@ const Fluid: React.FC<IContainerProps> = ({ children, className }) => {
 
 const Container: IContainer<IContainerProps> = ({ children, className }) => {
   return (
-    <div className={clsxm('container mx-auto px-4 md:px-8 lg:px-12 xl:px-16', className)}>
+    <div
+      className={clsxm(
+        'container mx-auto px-4 md:px-8 lg:px-12 xl:px-16',
+        className
+      )}
+    >
       {children}{' '}
     </div>
   );

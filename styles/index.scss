@@ -209,7 +209,8 @@ label {
   > .input-group-prepend > .input-group-text,
   > .input-group-append:not(:last-child) > .btn,
   > .input-group-append:not(:last-child) > .input-group-text,
-  > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+  > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
   > .input-group-append:last-child > .input-group-text:not(:last-child) {
     @apply rounded-r-none;
   }

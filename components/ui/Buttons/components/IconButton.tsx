@@ -24,7 +24,10 @@ const IconButton = ({
       onClick={onClick}
       {...rest}
     >
-      <Icon icon={icon} className={clsxm('close-modal h-8 w-8 text-inherit', iconClassName)} />
+      <Icon
+        icon={icon}
+        className={clsxm('close-modal h-8 w-8 text-inherit', iconClassName)}
+      />
     </Button>
   );
 };

@@ -6,7 +6,9 @@ const Banner = () => {
     <section className='contact-banner bg-banner pt-[235px] pb-[150px]'>
       <Container>
         <div className=''>
-          <H1 className='mb-4 text-center text-white'>Contact our Support Team</H1>
+          <H1 className='mb-4 text-center text-white'>
+            Contact our Support Team
+          </H1>
         </div>
       </Container>
     </section>

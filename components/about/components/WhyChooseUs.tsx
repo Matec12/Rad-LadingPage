@@ -7,7 +7,7 @@ export default function WhyChooseUs() {
   return (
     <section className='why-choose-us pt-16 xl:pt-24'>
       <Container>
-        <div className='relative flex flex-wrap flex-col-reverse md:flex-row items-center'>
+        <div className='relative flex flex-col-reverse flex-wrap items-center md:flex-row'>
           <div className='relative z-[1] overflow-visible md:flex md:w-1/2 md:flex-initial md:px-4'>
             <div className='thumbs'>
               <Image
@@ -38,13 +38,14 @@ export default function WhyChooseUs() {
               Us
             </H2>
             <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-              quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Dicta consequuntur, et, quis quaerat necessitatibus ut ipsum
-              provident Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              consequuntur, et, quis quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis quaerat
-              necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
             </Paragraph>
             <div className='mt-5'></div>
           </div>

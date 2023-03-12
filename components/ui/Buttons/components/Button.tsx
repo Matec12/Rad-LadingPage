@@ -162,15 +162,30 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className={clsxm(
               'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white',
               [
-                variant === 'primary' && ['text-white', { 'text-primary-80': outlined || flat }],
+                variant === 'primary' && [
+                  'text-white',
+                  { 'text-primary-80': outlined || flat }
+                ],
                 variant === 'secondary' && [
                   'text-white',
                   { 'text-secondary-80': outlined || flat }
                 ],
-                variant === 'success' && ['text-white', { 'text-success-80': outlined || flat }],
-                variant === 'danger' && ['text-white', { 'text-danger-80': outlined || flat }],
-                variant === 'warning' && ['text-white', { 'text-warning-80': outlined || flat }],
-                variant === 'info' && ['text-white', { 'text-info-80': outlined || flat }]
+                variant === 'success' && [
+                  'text-white',
+                  { 'text-success-80': outlined || flat }
+                ],
+                variant === 'danger' && [
+                  'text-white',
+                  { 'text-danger-80': outlined || flat }
+                ],
+                variant === 'warning' && [
+                  'text-white',
+                  { 'text-warning-80': outlined || flat }
+                ],
+                variant === 'info' && [
+                  'text-white',
+                  { 'text-info-80': outlined || flat }
+                ]
               ]
             )}
           >
@@ -201,7 +216,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               'bg-white bg-opacity-40',
               { 'bg-warning-30': outlined || flat }
             ],
-            variant === 'info' && ['bg-white bg-opacity-40', { 'bg-info-30': outlined || flat }]
+            variant === 'info' && [
+              'bg-white bg-opacity-40',
+              { 'bg-info-30': outlined || flat }
+            ]
           ])}
         ></span>
       </button>

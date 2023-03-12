@@ -32,9 +32,17 @@ const InputPassword = ({
 
   const renderIcon = () => {
     if (showPassword === false) {
-      return showIcon ? showIcon : <Icon icon='eva:eye-fill' width={24} height={24} />;
+      return showIcon ? (
+        showIcon
+      ) : (
+        <Icon icon='eva:eye-fill' width={24} height={24} />
+      );
     } else {
-      return hideIcon ? hideIcon : <Icon icon='eva:eye-off-fill' width={24} height={24} />;
+      return hideIcon ? (
+        hideIcon
+      ) : (
+        <Icon icon='eva:eye-off-fill' width={24} height={24} />
+      );
     }
   };
 
@@ -52,7 +60,9 @@ const InputPassword = ({
           className={clsxm('cursor-pointer', addonClassName)}
           addonType='append'
         >
-          <span className='text-body-primary input-group-text'>{renderIcon()}</span>
+          <span className='text-body-primary input-group-text'>
+            {renderIcon()}
+          </span>
         </InputGroupAddon>
       </InputGroup>
     </>

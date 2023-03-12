@@ -9,7 +9,10 @@ type CarouselControlsDotsProps = {
   color?: string;
 } & React.ComponentPropsWithRef<'ul'>;
 
-const CarouselControlsDots = ({ color = 'bg-primary', ...other }: CarouselControlsDotsProps) => {
+const CarouselControlsDots = ({
+  color = 'bg-primary',
+  ...other
+}: CarouselControlsDotsProps) => {
   return {
     appendDots: (dots: any) => (
       <>
@@ -87,13 +90,16 @@ export default function Testimonials() {
               Clients.
             </H2>
             <Paragraph className='mx-auto mb-8 max-w-xl text-section-subtitle'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-              quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
             </Paragraph>
             <div className='carousel-basic'>
               <Slider {...settings}>
                 {TESTIMONIALS.map(item => (
-                  <div key={item.name} className='bg-white p-8 shadow-contact-card rounded-lg'>
+                  <div
+                    key={item.name}
+                    className='rounded-lg bg-white p-8 shadow-contact-card'
+                  >
                     <div className='user-profile flex items-center gap-4'>
                       <div className='overflow-hidden rounded-full'>
                         <Image src={item.image} className='rounded-full' />
@@ -105,7 +111,9 @@ export default function Testimonials() {
                     </div>
                     <div className='flex justify-end'>
                       <div></div>
-                      <Paragraph className='mt-8 text-left'>{item.comment}</Paragraph>
+                      <Paragraph className='mt-8 text-left'>
+                        {item.comment}
+                      </Paragraph>
                     </div>
                   </div>
                 ))}

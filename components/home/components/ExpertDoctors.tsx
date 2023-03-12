@@ -56,8 +56,8 @@ export default function ExpertDoctors() {
             </span>
           </H2>
           <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-            quaerat necessitatibus ut ipsum provident
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            consequuntur, et, quis quaerat necessitatibus ut ipsum provident
           </Paragraph>
         </div>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3'>
@@ -99,7 +99,11 @@ export default function ExpertDoctors() {
           ))}
         </div>
         <div className='mt-14 flex justify-center '>
-          <ButtonLink href='' outlined className='border-gray-300 text-secondary hover:shadow-none'>
+          <ButtonLink
+            href=''
+            outlined
+            className='border-gray-300 text-secondary hover:shadow-none'
+          >
             Become a Consultant
           </ButtonLink>
         </div>

@@ -142,27 +142,53 @@ export default function Header({ headerClassName }: IHeaderProps) {
                     );
                   })}
                   <div className='flex flex-col gap-6 lg:hidden'>
-                    <ButtonLink flat href='https://radsync-portal.netlify.app/auth/login' className='hover:bg:transparent'>
+                    <ButtonLink
+                      flat
+                      openNewTab
+                      href='https://radsync-portal.netlify.app/auth/login'
+                      className='hover:bg:transparent'
+                    >
                       Login
                     </ButtonLink>
-                    <ButtonLink href='https://radsync-portal.netlify.app/auth/register'>Sign up</ButtonLink>
+                    <ButtonLink
+                      openNewTab
+                      href='https://radsync-portal.netlify.app/auth/register'
+                    >
+                      Sign up
+                    </ButtonLink>
                   </div>
                 </ul>
               </nav>
             </div>
 
             <div className='hidden gap-x-5 lg:flex'>
-              <ButtonLink flat href='https://radsync-portal.netlify.app/auth/login' isNewTab className='hover:bg-transparent'>
+              <ButtonLink
+                flat
+                openNewTab
+                href='https://radsync-portal.netlify.app/auth/login'
+                className='hover:bg-transparent'
+              >
                 Login
               </ButtonLink>
-              <ButtonLink href='https://radsync-portal.netlify.app/auth/register' isNewTab>Sign up</ButtonLink>
+              <ButtonLink
+                openNewTab
+                href='https://radsync-portal.netlify.app/auth/register'
+              >
+                Sign up
+              </ButtonLink>
             </div>
 
             <span
-              className={clsxm('relative z-30 cursor-pointer text-secondary lg:hidden')}
+              className={clsxm(
+                'relative z-30 cursor-pointer text-secondary lg:hidden'
+              )}
               onClick={() => setHide(!hide)}
             >
-              <Icon icon={hide ? 'eva:menu-fill' : 'eva:close-fill'} width={32} height={32} />
+              <Icon
+                icon={hide ? 'eva:menu-fill' : 'eva:close-fill'}
+                width={32}
+                height={32}
+              />
             </span>
           </div>
         </Container>

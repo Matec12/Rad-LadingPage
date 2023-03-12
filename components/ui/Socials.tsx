@@ -12,7 +12,10 @@ export default function Socials({ icon, className }: SocialProps) {
       icon={icon}
       width={36}
       height={36}
-      className={clsxm('text-primary transition delay-150 duration-300 ease-in', className)}
+      className={clsxm(
+        'text-primary transition delay-150 duration-300 ease-in',
+        className
+      )}
     />
   );
 }

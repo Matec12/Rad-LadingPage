@@ -79,7 +79,10 @@ const colorVariants = color => {
 };
 
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   mode: 'jit',
   darkMode: 'class', // or 'media' or 'class',
   // important: true,
@@ -118,7 +121,8 @@ module.exports = {
         }
       },
       boxShadow: {
-        custom: '0px 0px 1px rgba(12,26,75,0.1),0px 4px 20px -2px rgba(50,50,71,0.08)',
+        custom:
+          '0px 0px 1px rgba(12,26,75,0.1),0px 4px 20px -2px rgba(50,50,71,0.08)',
         'contact-card': '0px 30px 50px 0px rgb(1 11 60 / 10%);'
       },
       keyframes: {

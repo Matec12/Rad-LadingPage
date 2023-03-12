@@ -13,7 +13,9 @@ export default function Contact() {
         <UnstyledLink
           href='/contact'
           className={
-            pathname.includes('/contact') ? 'font-bold text-primary' : 'hover:text-primary'
+            pathname.includes('/contact')
+              ? 'font-bold text-primary'
+              : 'hover:text-primary'
           }
         >
           Contact
@@ -22,7 +24,9 @@ export default function Contact() {
       <ul>
         <li className='mb-3 flex items-center gap-3 text-base text-footer-link'>
           <Icon icon='fe:phone' width={20} height={20} />
-          <Paragraph className='text-base text-footer-link'>+234 915 916 2524 </Paragraph>
+          <Paragraph className='text-base text-footer-link'>
+            +234 915 916 2524{' '}
+          </Paragraph>
         </li>
         <li className='mb-3  flex items-center gap-3 text-base text-footer-link'>
           <Icon icon='ic:round-mail' width={24} height={24} />

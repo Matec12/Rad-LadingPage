@@ -169,7 +169,10 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
               'bg-white bg-opacity-40',
               { 'bg-warning-30': outlined || flat }
             ],
-            variant === 'info' && ['bg-white bg-opacity-40', { 'bg-info-30': outlined || flat }]
+            variant === 'info' && [
+              'bg-white bg-opacity-40',
+              { 'bg-info-30': outlined || flat }
+            ]
           ])}
         ></span>
       </UnstyledLink>

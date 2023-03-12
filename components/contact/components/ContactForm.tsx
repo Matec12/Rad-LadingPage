@@ -4,11 +4,19 @@ import * as Yup from 'yup';
 
 const ContactForm = () => {
   const formik = useFormik({
-    initialValues: { yourName: '', lastName: '', email: '', phone: '', message: '' },
+    initialValues: {
+      yourName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      message: ''
+    },
     validationSchema: Yup.object().shape({
       yourName: Yup.string().required('Name is Required'),
       phone: Yup.string().required('Phone is Required'),
-      email: Yup.string().email('Invalid email address').required('Email is Required'),
+      email: Yup.string()
+        .email('Invalid email address')
+        .required('Email is Required'),
       message: Yup.string().required('Message is Required')
     }),
     onSubmit: (values, { setSubmitting }) => {
@@ -46,7 +54,7 @@ const ContactForm = () => {
                 className='my-2 w-full rounded-[4px] border-2 p-4 text-primary focus:border-primary focus:outline-0'
                 name='email'
                 type='email'
-								placeholder='test@gmail.com'
+                placeholder='test@gmail.com'
               />
               <div className='text-sm text-red-600'>
                 <ErrorMessage name='email' />
@@ -62,7 +70,7 @@ const ContactForm = () => {
               className='my-2 w-full rounded-[4px] border-2 p-4 text-primary focus:border-primary focus:outline-0'
               name='phone'
               type='text'
-							placeholder='09074448588'
+              placeholder='09074448588'
             />
             <div className='text-sm text-red-600'>
               <ErrorMessage name='phone' />
@@ -78,7 +86,7 @@ const ContactForm = () => {
               name='message'
               as='textarea'
               rows={6}
-							placeholder='Message...'
+              placeholder='Message...'
             />
             <div className='text-sm text-red-600'>
               <ErrorMessage name='message' />
@@ -89,7 +97,10 @@ const ContactForm = () => {
             <Button className='w-full'>
               <a className=''>
                 {isSubmitting ? (
-                  <i className='fas fa-circle-notch fa-spin' aria-hidden='true'></i>
+                  <i
+                    className='fas fa-circle-notch fa-spin'
+                    aria-hidden='true'
+                  ></i>
                 ) : (
                   'Send Message'
                 )}

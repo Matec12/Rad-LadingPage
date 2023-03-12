@@ -50,11 +50,11 @@ export default function Stats() {
             </span>{' '}
           </H2>
           <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-            quaerat necessitatibus ut ipsum provident
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            consequuntur, et, quis quaerat necessitatibus ut ipsum provident
           </Paragraph>
         </div>
-        <div className='grid grid-cols-2 gap-5 md:grid-cols-4 place-items-center'>
+        <div className='grid grid-cols-2 place-items-center gap-5 md:grid-cols-4'>
           {STATS.map(stat => (
             <StatsItem key={stat.title} stat={stat} />
           ))}
@@ -70,13 +70,21 @@ function StatsItem({ stat }: { stat: Stats }) {
   return (
     <div className={clsxm('stat-item')}>
       <div className='stat-icon overflow-hidden'>
-        <Icon width={40} height={40} icon={icon} className={clsxm('font-light', iconColor)} />
+        <Icon
+          width={40}
+          height={40}
+          icon={icon}
+          className={clsxm('font-light', iconColor)}
+        />
       </div>
       <div className='stat-content mt-4 '>
         <CountUp start={0} end={statNumber} delay={0}>
           {({ countUpRef }) => (
             <div>
-              <span className='mb-1 text-2xl font-bold text-secondary' ref={countUpRef} />
+              <span
+                className='mb-1 text-2xl font-bold text-secondary'
+                ref={countUpRef}
+              />
             </div>
           )}
         </CountUp>

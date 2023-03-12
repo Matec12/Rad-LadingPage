@@ -56,8 +56,8 @@ export default function Services() {
             Testing Services
           </H2>
           <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-            quaerat necessitatibus ut ipsum provident
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            consequuntur, et, quis quaerat necessitatibus ut ipsum provident
           </Paragraph>
         </div>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4'>
@@ -105,7 +105,9 @@ function ServiceItem({ service }: { service: Services }) {
             onClick={() => router.push(href)}
             className={clsxm(
               'rounded-full border border-gray-300 bg-transparent p-2 text-white hover:border-white hover:text-lg',
-              isHovered ? 'translate-x-0 transition-all duration-300' : '-translate-x-10'
+              isHovered
+                ? 'translate-x-0 transition-all duration-300'
+                : '-translate-x-10'
             )}
           >
             <Icon icon='material-symbols:arrow-right-alt-rounded' />

@@ -6,7 +6,10 @@ import Image from '@/components/ui/Image';
 
 export default function Banner() {
   return (
-    <section id='banner' className='hero hero-pattern w-full bg-banner pt-32 pb-24 xl:py-44 -mt-24'>
+    <section
+      id='banner'
+      className='hero hero-pattern -mt-24 w-full bg-banner pt-32 pb-24 xl:py-44'
+    >
       <Container>
         <div className='relative flex flex-wrap items-center'>
           <div className='z-[1] grid gap-y-4 px-2 text-left sm:gap-y-4 md:w-1/2 md:flex-initial'>
@@ -23,8 +26,8 @@ export default function Banner() {
               Process with Doctor Expertise.{' '}
             </H1>
             <Paragraph className='text-xl text-section-title'>
-              Transforming the Way Hospitals Approach Diagnostic Testing with Comprehensive Doctor
-              Collaboration{' '}
+              Transforming the Way Hospitals Approach Diagnostic Testing with
+              Comprehensive Doctor Collaboration{' '}
             </Paragraph>
             <div className='mt-5'>
               <ButtonLink className='px-8 py-3' href='/'>

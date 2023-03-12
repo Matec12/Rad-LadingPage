@@ -17,8 +17,8 @@ export default function Footer() {
                 <LogoWhite className='' />
               </UnstyledLink>
               <Paragraph className='mt-5 text-footer-link'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore soluta
-                dolorum totam repudiandae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                tempore soluta dolorum totam repudiandae.
               </Paragraph>
             </div>
             <Company />

@@ -8,7 +8,11 @@ export type LabelProps = {
 const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
   ({ children, className, ...rest }: LabelProps, ref) => {
     return (
-      <label ref={ref} className={clsxm('text-body-primary', className)} {...rest}>
+      <label
+        ref={ref}
+        className={clsxm('text-body-primary', className)}
+        {...rest}
+      >
         {children}
       </label>
     );

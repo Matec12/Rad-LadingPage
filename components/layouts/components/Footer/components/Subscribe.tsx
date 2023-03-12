@@ -36,7 +36,11 @@ export default function Subscribe() {
       <div>
         <form className=' mt-8 flex w-full '>
           <FormGroup className='m-auto flex w-full content-center items-center'>
-            <Input className='focus:border-0' type='text' placeholder='Your email address' />
+            <Input
+              className='focus:border-0'
+              type='text'
+              placeholder='Your email address'
+            />
             <IconButton
               onClick={handleSubscribe}
               icon='ic:sharp-arrow-right-alt'

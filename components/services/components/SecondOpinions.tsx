@@ -21,13 +21,14 @@ export default function SecondOpinions() {
               Opinions
             </H2>
             <Paragraph className='mx-auto max-w-xl text-section-subtitle'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis
-              quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Dicta consequuntur, et, quis quaerat necessitatibus ut ipsum
-              provident Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              consequuntur, et, quis quaerat necessitatibus ut ipsum provident Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Dicta consequuntur, et, quis quaerat
-              necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              consequuntur, et, quis quaerat necessitatibus ut ipsum provident
             </Paragraph>
             <div className='mt-5'></div>
           </div>

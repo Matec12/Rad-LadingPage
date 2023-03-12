@@ -10,6 +10,9 @@ export type CustomAppProps = AppProps & {
   getLayout?: (page: React.ReactNode) => React.ReactNode;
 };
 
-export type InputChangeEventHandler = React.ChangeEventHandler<HTMLInputElement>;
-export type TextareaChangeEventHandler = React.ChangeEventHandler<HTMLTextAreaElement>;
-export type SelectChangeEventHandler = React.ChangeEventHandler<HTMLSelectElement>;
+export type InputChangeEventHandler =
+  React.ChangeEventHandler<HTMLInputElement>;
+export type TextareaChangeEventHandler =
+  React.ChangeEventHandler<HTMLTextAreaElement>;
+export type SelectChangeEventHandler =
+  React.ChangeEventHandler<HTMLSelectElement>;
